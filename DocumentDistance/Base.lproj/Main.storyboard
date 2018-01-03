@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DocumentDistance" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hello there" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8PQ-gp-tQZ">
+                                <rect key="frame" x="0.0" y="200" width="188" height="467"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hello there" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LAF-Lw-iqv">
+                                <rect key="frame" x="188" y="200" width="188" height="467"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Document Distance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAK-1u-UwL">
+                                <rect key="frame" x="16" y="87" width="343" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LAF-Lw-iqv" firstAttribute="height" secondItem="8PQ-gp-tQZ" secondAttribute="height" id="2A3-4Q-95F"/>
+                            <constraint firstItem="cAK-1u-UwL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="41u-B7-ow0"/>
+                            <constraint firstItem="LAF-Lw-iqv" firstAttribute="leading" secondItem="8PQ-gp-tQZ" secondAttribute="trailing" id="5hP-pC-A4v"/>
+                            <constraint firstAttribute="trailing" secondItem="LAF-Lw-iqv" secondAttribute="trailing" id="7Qp-eK-gZi"/>
+                            <constraint firstItem="LAF-Lw-iqv" firstAttribute="top" secondItem="cAK-1u-UwL" secondAttribute="bottom" constant="70" id="8d9-uw-kAq"/>
+                            <constraint firstItem="8PQ-gp-tQZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A2I-MA-INc"/>
+                            <constraint firstItem="LAF-Lw-iqv" firstAttribute="width" secondItem="8PQ-gp-tQZ" secondAttribute="width" id="LDW-gg-S2F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cAK-1u-UwL" secondAttribute="trailing" constant="16" id="XfP-of-Ohx"/>
+                            <constraint firstItem="LAF-Lw-iqv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="180" id="Yfc-6U-Rlm"/>
+                            <constraint firstItem="8PQ-gp-tQZ" firstAttribute="top" secondItem="cAK-1u-UwL" secondAttribute="bottom" constant="70" id="iIW-dh-yIE"/>
+                            <constraint firstItem="LAF-Lw-iqv" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jhe-aR-73a"/>
+                            <constraint firstItem="cAK-1u-UwL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="p8h-TQ-PVQ"/>
+                            <constraint firstItem="8PQ-gp-tQZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" multiplier="2.5" constant="200" id="v6h-TI-SXm"/>
+                            <constraint firstItem="8PQ-gp-tQZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" multiplier="0.5" id="vXg-ge-PzL"/>
+                            <constraint firstItem="8PQ-gp-tQZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wQB-hQ-rFt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="documentDistanceLabel" destination="cAK-1u-UwL" id="NKg-pT-2KS"/>
+                        <outlet property="textViewOne" destination="8PQ-gp-tQZ" id="awL-eG-t1c"/>
+                        <outlet property="textViewTwo" destination="LAF-Lw-iqv" id="Fas-0I-oh4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
